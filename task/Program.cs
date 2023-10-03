@@ -52,6 +52,10 @@ int[] GetIndexesWithLength(string[] list, int maxLength)
         }
     }
 
+    if(pos == list.Length) {
+        return indexes;
+    }
+
     int[] resultIndexes = new int[pos];
     Array.Copy(indexes, 0, resultIndexes, 0, pos);
 
